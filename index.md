@@ -3,7 +3,10 @@ layout: default
 title: Papers
 ---
 
-The diSimplex papers can be found here...
+### diSimplex.org Papers
 
-... comming soon! 
+[Papers]{% web papers:/papers %}
 
+[Keywords]{% web papers:/keywords %}
+
+[Authors]{% web papers:/authors %}
