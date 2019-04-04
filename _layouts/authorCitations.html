@@ -1,0 +1,16 @@
+---
+layout: none
+---
+      <tr>
+        <th>citeKeys:</th>
+        <td>
+          <ul>
+          {% for citeKey in page.citeKeys %}
+            <li>
+              <a href="/refs/{{citeKey['url'] }}">{{ citeKey['linkText'] }}</a>
+              <br>{{ citeKey['auxText'] }}
+            </li>
+          {% endfor %}
+          </ul>
+        </td>
+      </tr>

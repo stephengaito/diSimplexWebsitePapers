@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<div class="author">
+
+  <header class="author-header">
+    <h1 class="author-title">{{ page.title }}</h1>
+  </header>
+
+  <article class="author-fields">
+    <table>
+        <th>first name:</th>
+        <td>{{ page['firstName']}}</td>
+      </tr>
+      <tr>
+        <th>last name:</th>
+        <td>{{ page['surName']}}</td>
+      </tr>
+      <tr>
+        <th>email:</th>
+        <td>{% if page.biblatex['email'] %} <a href="mailto:{{ page.biblatex['email']}}">{{page.biblatex['email']}}</a> {%endif%}</td>
+      </tr>
+      <tr>
+        <th>url:</th>
+        <td>
+          <ul>
+          {% for aUrl in page.biblatex['url'] %}
+            <li><a href="{{aUrl}}">{{aUrl}}</a></li>
+          {%endfor%}
+          </ul>
+        </td>
+      </tr>
+      <!--#include file="/papers/{{ page.papersUrl }}" -->
+    </table>
+  </article>
+
+  <hr>
+
+  <article class="author-content">
+    {{ content }}
+  </article>
+
+</div>

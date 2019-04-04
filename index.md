@@ -5,8 +5,10 @@ title: Papers
 
 ### diSimplex.org Papers
 
-[Papers]{% web papers:/papers %}
+[WorkingDrafts]{% web papers:/workingDraft %}
 
-[Keywords]{% web papers:/keywords %}
+[Papers]{% web papers:/paper %}
 
-[Authors]{% web papers:/authors %}
+[Keywords]{% web papers:/keyword %}
+
+[Authors]{% web papers:/author %}

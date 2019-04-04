@@ -1,16 +1,35 @@
 ---
 layout: default
 ---
-<h2>{% for crumb in page.breadCrumbs %}
-  / <a href="/blog{{crumb[1]}}">{{crumb[0]}}</a>
-{% endfor %}</h2>
 <div class="index">
-<p>
-  <ul>
-  {% for item in page.pageIndex %}
-    <li><a href="/blog{{item[1]}}">{{item[0]}}</a></li>
-  {% endfor %}
-  </ul>
-</p>
-</div>
 
+  <header class="index-header">
+    <h1 class="index-title">{{ page.title }}</h1>
+  </header>
+
+  <div>
+    {% for aLink in page.rootIndex %}
+    <a href="/papers/{{ aLink['url'] }}">{{ aLink['linkText'] }}</a>
+    {% endfor %}
+  </div>
+
+  <div>
+    {% for aLink in page.subIndex %}
+    <a href="/papers/{{ aLink['url'] }}">{{ aLink['linkText'] }}</a>
+    {% endfor %}
+  </div>
+
+  <div>
+    <ul>
+      {% for aLink in page.index %}
+      <li>
+        <a href="/papers/{{ aLink['url'] }}">{{ aLink['linkText'] }}</a>
+        {% unless aLink['auxText'].empty? %}
+          <br>{{ aLink['auxText'] }}
+        {% endunless %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+</div>

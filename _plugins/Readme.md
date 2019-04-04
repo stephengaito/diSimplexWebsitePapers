@@ -10,16 +10,16 @@ Jekyll generator pattern to do this.
 For each paper we want to chronologically list all workingDraft versions 
 as well as all released versions.
 
-Papers will be listed alphabetically. Accessed via the /papers sub-url. 
+Papers will be listed alphabetically. Accessed via the /paper sub-url. 
 
 Papers will be listed by an alphabetical list of keywords. Accessed via the 
-/keywords sub-url.
+/keyword sub-url.
 
 Papers will be listed by an alphabetic list of authors. Accessed 
-via the /authors sub-url.
+via the /author sub-url.
 
 Working drafts will be listed by year/month/name. Accessed via the 
-/workingDrafts sub-url.
+/workingDraft sub-url.
 
 Released papers will be listed by name/releaseId. Accessed via the 
 /released sub-url.

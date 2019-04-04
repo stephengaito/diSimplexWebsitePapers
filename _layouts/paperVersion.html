@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="paperVersion">
+
+  <header class="paperVersion-header">
+    <h1 class="paperVersion-title">{{ page.title }}</h1>
+  </header>
+
+  <!--a href="/papers/{{ page.biblatexUrl }}">BibLaTeX</a -->
+  <!-- a href="/papers/{{ page.bibcontextUrl }}">BibConTeXt(lua)</a -->
+  <a href="/papers/{{ page.paperPdf }}">PDF</a>
+  <a href="/papers/{{ page.paperPdf2Html }}">Online</a>
+
+  <hr>
+
+  <article class="paperVersion-content">
+    {{ content }}
+  </article>
+
+</div>
