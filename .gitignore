@@ -4,5 +4,8 @@ _site/
 .jekyll-metadata
 _deploy*
 _stage*
-workingDrafts
 *.swp
+author
+keyword
+paper
+workingDraft
