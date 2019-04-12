@@ -12,3 +12,5 @@ title: Papers
 [Keywords]{% web papers:/keyword %}
 
 [Authors]{% web papers:/author %}
+
+[Code]{% web code:/ %}
