@@ -4,6 +4,7 @@ _site/
 .jekyll-metadata
 _deploy*
 _stage*
+_code*
 *.swp
 author
 keyword
